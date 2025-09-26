@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  
+  <!-- Enhanced SEO Meta Tags -->
+  <title>Blog - Image Conversion Guides & Tutorials | Snap2Format 2025</title>
+  <meta name="title" content="Blog - Expert Image Conversion Guides | Snap2Format">
+  <meta name="description" content="Learn image optimization, batch conversion, format comparisons & professional tips. Expert guides on JPG to PNG, HEIC to JPG, WebP conversion, PDF creation. 20+ tutorials for photographers, designers & developers.">
+  <meta name="keywords" content="image optimization blog, batch image conversion guide, jpg to png tutorial, heic to jpg guide, webp converter tutorial, pdf creation guide, image format comparison, web image optimization, raw to jpg conversion, svg guide, image resizing tutorial, photo conversion tips, image converter blog, snap2format tutorials, Gourav Choudhary articles">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta name="author" content="Gourav Choudhary">
+  <meta name="publisher" content="Snap2Format">
+  <meta name="language" content="English">
+  <meta name="revisit-after" content="3 days">
+  <meta name="rating" content="general">
+  <meta name="distribution" content="global">
+  
+  <link rel="canonical" href="https://snap2format.onrender.com/blog">
+  <link rel="alternate" hreflang="en" href="https://snap2format.onrender.com/blog">
+  <link rel="alternate" type="application/rss+xml" title="Snap2Format Blog RSS" href="/blog/rss.xml">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://snap2format.onrender.com/blog">
+  <meta property="og:title" content="Blog - Expert Image Conversion Guides | Snap2Format">
+  <meta property="og:description" content="Learn professional image conversion techniques. Expert guides on optimization, batch processing, and format selection.">
+  <meta property="og:image" content="https://snap2format.onrender.com/og-blog.jpg">
+  <meta property="og:site_name" content="Snap2Format Blog">
+  <meta property="og:locale" content="en_US">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://snap2format.onrender.com/blog">
+  <meta property="twitter:title" content="Image Conversion Blog - Snap2Format">
+  <meta property="twitter:description" content="Expert guides on image optimization and batch conversion techniques.">
+  <meta property="twitter:image" content="https://snap2format.onrender.com/twitter-blog.jpg">
+  <meta property="twitter:creator" content="@Its_Gourav_09">
+  <meta property="twitter:site" content="@snap2format">
+  
+  <!-- Structured Data for Blog -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Snap2Format Blog",
+    "description": "Expert guides and tutorials on image conversion and optimization",
+    "url": "https://snap2format.onrender.com/blog",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Snap2Format",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://snap2format.onrender.com/logo.png"
+      }
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Gourav Choudhary",
+      "url": "https://www.linkedin.com/in/gouravxchoudhary"
+    }
+  }
+  </script>
+  
+  <!-- PWA & Mobile -->
+  <meta name="theme-color" content="#2563eb">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no">
+  
+  <!-- Load Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <style>
+    /* Enhanced Mobile Responsiveness */
+    @media (max-width: 640px) {
+      .container {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+      }
+      
+      button, a {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+      }
+      
+      h1 { font-size: 1.875rem !important; }
+      h2 { font-size: 1.5rem !important; }
+      h3 { font-size: 1.25rem !important; }
+    }
+    
+    /* Accessibility */
+    :focus-visible {
+      outline: 3px solid #3B82F6;
+      outline-offset: 2px;
+    }
+    
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+      background: #2563eb;
+      border-radius: 5px;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+      background: #1d4ed8;
+    }
+    
+    /* Loading animation */
+    .loading-content {
+      animation: fadeIn 0.5s ease-in;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+  
+  <!-- Header with Navigation -->
+  <header class="bg-blue-600 text-white shadow-lg sticky top-0 z-50">
+    <nav class="container mx-auto px-4 py-4 md:py-6">
+      <div class="flex justify-between items-center">
+        <div class="flex items-center space-x-2">
+          <a href="/" class="text-xl md:text-3xl font-bold hover:text-blue-200 transition-colors">
+            Snap2Format
+          </a>
+        </div>
+        
+        <!-- Mobile Menu Button -->
+        <button 
+          id="mobile-menu-btn"
+          class="md:hidden p-2 rounded-lg hover:bg-blue-700 transition-colors"
+          aria-label="Toggle menu"
+        >
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+        
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex space-x-6">
+          <a href="/about" class="hover:text-blue-200 transition-colors">About</a>
+          <a href="/blog" class="hover:text-blue-200 transition-colors font-semibold">Blog</a>
+          <a href="/#faq" class="hover:text-blue-200 transition-colors">FAQ</a>
+          <a href="/contact" class="hover:text-blue-200 transition-colors">Contact</a>
+        </div>
+      </div>
+      
+      <!-- Mobile Navigation -->
+      <div id="mobile-menu" class="hidden md:hidden mt-4 pb-2 border-t border-blue-500 pt-4">
+        <a href="/about" class="block py-2 hover:text-blue-200 transition-colors">About</a>
+        <a href="/blog" class="block py-2 hover:text-blue-200 transition-colors font-semibold">Blog</a>
+        <a href="/#faq" class="block py-2 hover:text-blue-200 transition-colors">FAQ</a>
+        <a href="/contact" class="block py-2 hover:text-blue-200 transition-colors">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-12 md:py-16">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-3xl md:text-5xl font-bold mb-4">Expert Image Conversion Guides</h1>
+      <p class="text-lg md:text-xl text-blue-100 max-w-3xl mx-auto">
+        Master image optimization, batch processing, and format selection with our comprehensive tutorials
+      </p>
+      <!-- Search Bar -->
+      <div class="mt-6 max-w-2xl mx-auto">
+        <div class="relative">
+          <input 
+            type="search" 
+            placeholder="Search articles..." 
+            class="w-full px-6 py-4 rounded-lg text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white"
+          />
+          <button class="absolute right-2 top-2 bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition-colors">
+            Search
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Categories - NEW SECTION -->
+  <section class="py-8 bg-white border-b">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-wrap justify-center gap-3">
+        <button class="px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors">All Articles</button>
+        <button class="px-6 py-2 bg-gray-200 text-gray-700 rounded-full hover:bg-gray-300 transition-colors">Tutorials</button>
+        <button class="px-6 py-2 bg-gray-200 text-gray-700 rounded-full hover:bg-gray-300 transition-colors">Format Guides</button>
+        <button class="px-6 py-2 bg-gray-200 text-gray-700 rounded-full hover:bg-gray-300 transition-colors">Optimization</button>
+        <button class="px-6 py-2 bg-gray-200 text-gray-700 rounded-full hover:bg-gray-300 transition-colors">Batch Processing</button>
+        <button class="px-6 py-2 bg-gray-200 text-gray-700 rounded-full hover:bg-gray-300 transition-colors">Professional Tips</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <div class="container mx-auto px-4 py-12 loading-content">
+    <!-- Blog Posts Grid -->
+    <div class="max-w-7xl mx-auto">
+      
+      <!-- Featured Article Banner - NEW -->
+      <div class="bg-gradient-to-r from-cyan-600 to-blue-600 rounded-2xl p-8 mb-12 text-white">
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+          <div>
+            <span class="bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full text-sm">Featured Guide</span>
+            <h2 class="text-3xl font-bold mt-4 mb-3">WebP Format Guide: Modern Image Optimization</h2>
+            <p class="text-blue-100 mb-4">Master WebP format for web optimization. Learn about browser compatibility, conversion techniques, and performance benefits for your website.</p>
+            <div class="flex items-center gap-4 text-sm mb-6">
+              <span>By Gourav Choudhary</span>
+              <span>•</span>
+              <span>September 25, 2025</span>
+              <span>•</span>
+              <span>12 min read</span>
+            </div>
+            <a href="/blog/webp-guide" class="inline-block bg-white text-cyan-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
+              Read Complete Guide
+            </a>
+          </div>
+          <div class="hidden md:block">
+            <div class="bg-white/10 backdrop-blur-sm rounded-lg p-8">
+              <div class="text-center text-6xl">🌐</div>
+              <div class="mt-4 text-center font-bold">Modern Web Format</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8" id="blog-posts">
+        
+        <!-- Blog Post 1: PDF Conversion -->
+        <article class="bg-white rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 ring-4 ring-yellow-400 ring-opacity-50">
+          <div class="bg-gradient-to-r from-yellow-400 to-orange-400 px-4 py-2">
+            <span class="text-sm font-bold text-gray-800">⭐ Most Popular</span>
+          </div>
+          
+          <!-- Colorful header -->
+          <div class="h-48 bg-gradient-to-br from-red-400 via-red-500 to-pink-600 flex items-center justify-center">
+            <div class="text-center">
+              <div class="text-6xl mb-2">📄</div>
+              <div class="text-white font-bold text-lg">PDF Creation</div>
+            </div>
+          </div>
+          
+          <div class="p-6">
+            <div class="flex items-center text-sm text-gray-500 mb-3">
+              <img src="https://via.placeholder.com/24" class="w-6 h-6 rounded-full mr-2" alt="Author" />
+              <span>Gourav Choudhary</span>
+              <span class="mx-2">•</span>
+              <span>Sep 12, 2025</span>
+            </div>
+            
+            <h2 class="text-2xl font-bold text-gray-800 mb-3 hover:text-blue-600 transition-colors">
+              <a href="/blog/images-to-pdf">Converting Images to PDF: The Complete Guide</a>
+            </h2>
+            
+            <p class="text-gray-600 mb-4">
+              Master PDF creation from images. Learn single & batch conversion, quality settings, page organization, and professional document creation techniques.
+            </p>
+            
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="text-xs bg-blue-100 text-blue-700 px-3 py-1 rounded-full">#pdf</span>
+              <span class="text-xs bg-blue-100 text-blue-700 px-3 py-1 rounded-full">#conversion</span>
+              <span class="text-xs bg-blue-100 text-blue-700 px-3 py-1 rounded-full">#tutorial</span>
+            </div>
+            
+            <div class="flex justify-end items-center">
+              <span class="text-sm text-gray-500">8 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Blog Post 2: Format Comparison -->
+        <article class="bg-white rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+          <div class="h-48 bg-gradient-to-br from-purple-400 via-purple-500 to-indigo-600 flex items-center justify-center">
+            <div class="text-center">
+              <div class="text-6xl mb-2">🎨</div>
+              <div class="text-white font-bold text-lg">Format Guide</div>
+            </div>
+          </div>
+          
+          <div class="p-6">
+            <div class="flex items-center text-sm text-gray-500 mb-3">
+              <img src="https://via.placeholder.com/24" class="w-6 h-6 rounded-full mr-2" alt="Author" />
+              <span>Gourav Choudhary</span>
+              <span class="mx-2">•</span>
+              <span>Sep 12, 2025</span>
+            </div>
+            
+            <h2 class="text-2xl font-bold text-gray-800 mb-3 hover:text-blue-600 transition-colors">
+              <a href="/blog/format-comparison">Image Format Comparison: Choose the Right Format</a>
+            </h2>
+            
+            <p class="text-gray-600 mb-4">
+              Comprehensive comparison of JPG, PNG, WebP, AVIF formats. Learn quality considerations, file sizes, and use cases for each format.
+            </p>
+            
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="text-xs bg-blue-100 text-blue-700 px-3 py-1 rounded-full">#formats</span>
+              <span class="text-xs bg-blue-100 text-blue-700 px-3 py-1 rounded-full">#comparison</span>
+              <span class="text-xs bg-blue-100 text-blue-700 px-3 py-1 rounded-full">#guide</span>
+            </div>
+            
+            <div class="flex justify-end items-center">
+              <span class="text-sm text-gray-500">15 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Blog Post 3: Web Optimization -->
+        <article class="bg-white rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+          <div class="h-48 bg-gradient-to-br from-blue-400 via-blue-500 to-indigo-600 flex items-center justify-center">
+            <div class="text-center">
+              <div class="text-6xl mb-2">🚀</div>
+              <div class="text-white font-bold text-lg">Web Optimization</div>
+            </div>
+          </div>
+          
+          <div class="p-6">
+            <div class="flex items-center text-sm text-gray-500 mb-3">
+              <img src="https://via.placeholder.com/24" class="w-6 h-6 rounded-full mr-2" alt="Author" />
+              <span>Gourav Choudhary</span>
+              <span class="mx-2">•</span>
+              <span>Jan 10, 2025</span>
+            </div>
+            
+            <h2 class="text-2xl font-bold text-gray-800 mb-3 hover:text-blue-600 transition-colors">
+              <a href="/blog/image-optimization-web">Image Optimization for Web: Formats, Sizes & SEO</a>
+            </h2>
+            
+            <p class="text-gray-600 mb-4">
+              Optimize images for websites. Best formats, compression techniques, and SEO benefits. Complete guide with practical examples.
+            </p>
+            
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="text-xs bg-blue-100 text-blue-700 px-3 py-1 rounded-full">#seo</span>
+              <span class="text-xs bg-blue-100 text-blue-700 px-3 py-1 rounded-full">#optimization</span>
+              <span class="text-xs bg-blue-100 text-blue-700 px-3 py-1 rounded-full">#web</span>
+            </div>
+            
+            <div class="flex justify-end items-center">
+              <span class="text-sm text-gray-500">10 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Blog Post 4: Batch Processing -->
+        <article class="bg-white rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+          <div class="h-48 bg-gradient-to-br from-green-400 via-green-500 to-teal-600 flex items-center justify-center">
+            <div class="text-center">
+              <div class="text-6xl mb-2">⚡</div>
+              <div class="text-white font-bold text-lg">Batch Processing</div>
+            </div>
+          </div>
+          
+          <div class="p-6">
+            <div class="flex items-center text-sm text-gray-500 mb-3">
+              <img src="https://via.placeholder.com/24" class="w-6 h-6 rounded-full mr-2" alt="Author" />
+              <span>Gourav Choudhary</span>
+              <span class="mx-2">•</span>
+              <span>Jan 9, 2025</span>
+            </div>
+            
+            <h2 class="text-2xl font-bold text-gray-800 mb-3 hover:text-blue-600 transition-colors">
+              <a href="/blog/batch-image-conversion">Batch Image Conversion: Save Time with Bulk Processing</a>
+            </h2>
+            
+            <p class="text-gray-600 mb-4">
+              Convert multiple images at once. Best tools and techniques for bulk image conversion. Save hours of manual work.
+            </p>
+            
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="text-xs bg-blue-100 text-blue-700 px-3 py-1 rounded-full">#batch</span>
+              <span class="text-xs bg-blue-100 text-blue-700 px-3 py-1 rounded-full">#bulk</span>
+              <span class="text-xs bg-blue-100 text-blue-700 px-3 py-1 rounded-full">#productivity</span>
+            </div>
+            
+            <div class="flex justify-end items-center">
+              <span class="text-sm text-gray-500">6 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Blog Post 5: HEIC to JPG -->
+        <article class="bg-white rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+          <div class="h-48 bg-gradient-to-br from-indigo-400 via-indigo-500 to-purple-600 flex items-center justify-center">
+            <div class="text-center">
+              <div class="text-6xl mb-2">📱</div>
+              <div class="text-white font-bold text-lg">iPhone Photos</div>
+            </div>
+          </div>
+          
+          <div class="p-6">
+            <div class="flex items-center text-sm text-gray-500 mb-3">
+              <img src="https://via.placeholder.com/24" class="w-6 h-6 rounded-full mr-2" alt="Author" />
+              <span>Gourav Choudhary</span>
+              <span class="mx-2">•</span>
+              <span>Sep 12, 2025</span>
+            </div>
+            
+            <h2 class="text-2xl font-bold text-gray-800 mb-3 hover:text-blue-600 transition-colors">
+              <a href="/blog/heic-to-jpg">Convert HEIC to JPG: Complete Guide for iPhone Users</a>
+            </h2>
+            
+            <p class="text-gray-600 mb-4">
+              Convert HEIC photos from iPhone to JPG format. Step-by-step guide with multiple conversion methods and best practices.
+            </p>
+            
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="text-xs bg-blue-100 text-blue-700 px-3 py-1 rounded-full">#heic</span>
+              <span class="text-xs bg-blue-100 text-blue-700 px-3 py-1 rounded-full">#iphone</span>
+              <span class="text-xs bg-blue-100 text-blue-700 px-3 py-1 rounded-full">#conversion</span>
+            </div>
+            
+            <div class="flex justify-end items-center">
+              <span class="text-sm text-gray-500">8 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Blog Post 6: Image Resizing Guide -->
+        <article class="bg-white rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+          <div class="h-48 bg-gradient-to-br from-orange-400 via-orange-500 to-red-600 flex items-center justify-center">
+            <div class="text-center">
+              <div class="text-6xl mb-2">📏</div>
+              <div class="text-white font-bold text-lg">Resize & Scale</div>
+            </div>
+          </div>
+          
+          <div class="p-6">
+            <div class="flex items-center text-sm text-gray-500 mb-3">
+              <img src="https://via.placeholder.com/24" class="w-6 h-6 rounded-full mr-2" alt="Author" />
+              <span>Gourav Choudhary</span>
+              <span class="mx-2">•</span>
+              <span>Sep 12, 2025</span>
+            </div>
+            
+            <h2 class="text-2xl font-bold text-gray-800 mb-3 hover:text-blue-600 transition-colors">
+              <a href="/blog/image-resizing-guide">Complete Image Resizing Guide: Dimensions & Quality</a>
+            </h2>
+            
+            <p class="text-gray-600 mb-4">
+              Master image resizing techniques. Learn about aspect ratios, quality preservation, batch resizing, and optimal dimensions for different platforms.
+            </p>
+            
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="text-xs bg-blue-100 text-blue-700 px-3 py-1 rounded-full">#resize</span>
+              <span class="text-xs bg-blue-100 text-blue-700 px-3 py-1 rounded-full">#dimensions</span>
+              <span class="text-xs bg-blue-100 text-blue-700 px-3 py-1 rounded-full">#quality</span>
+            </div>
+            
+            <div class="flex justify-end items-center">
+              <span class="text-sm text-gray-500">7 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Blog Post 7: PDF to Image -->
+        <article class="bg-white rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+          <div class="h-48 bg-gradient-to-br from-pink-400 via-pink-500 to-rose-600 flex items-center justify-center">
+            <div class="text-center">
+              <div class="text-6xl mb-2">📋</div>
+              <div class="text-white font-bold text-lg">PDF Extraction</div>
+            </div>
+          </div>
+          
+          <div class="p-6">
+            <div class="flex items-center text-sm text-gray-500 mb-3">
+              <img src="https://via.placeholder.com/24" class="w-6 h-6 rounded-full mr-2" alt="Author" />
+              <span>Gourav Choudhary</span>
+              <span class="mx-2">•</span>
+              <span>Sep 12, 2025</span>
+            </div>
+            
+            <h2 class="text-2xl font-bold text-gray-800 mb-3 hover:text-blue-600 transition-colors">
+              <a href="/blog/pdf-to-image">Extract Images from PDF: Complete Extraction Guide</a>
+            </h2>
+            
+            <p class="text-gray-600 mb-4">
+              Learn how to extract images from PDF files. Multiple extraction methods, quality preservation, and batch processing techniques explained.
+            </p>
+            
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="text-xs bg-blue-100 text-blue-700 px-3 py-1 rounded-full">#pdf</span>
+              <span class="text-xs bg-blue-100 text-blue-700 px-3 py-1 rounded-full">#extraction</span>
+              <span class="text-xs bg-blue-100 text-blue-700 px-3 py-1 rounded-full">#images</span>
+            </div>
+            
+            <div class="flex justify-end items-center">
+              <span class="text-sm text-gray-500">9 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Blog Post 8: RAW to JPG -->
+        <article class="bg-white rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+          <div class="h-48 bg-gradient-to-br from-gray-600 via-gray-700 to-gray-800 flex items-center justify-center">
+            <div class="text-center">
+              <div class="text-6xl mb-2">📷</div>
+              <div class="text-white font-bold text-lg">RAW Processing</div>
+            </div>
+          </div>
+          
+          <div class="p-6">
+            <div class="flex items-center text-sm text-gray-500 mb-3">
+              <img src="https://via.placeholder.com/24" class="w-6 h-6 rounded-full mr-2" alt="Author" />
+              <span>Gourav Choudhary</span>
+              <span class="mx-2">•</span>
+              <span>Sep 12, 2025</span>
+            </div>
+            
+            <h2 class="text-2xl font-bold text-gray-800 mb-3 hover:text-blue-600 transition-colors">
+              <a href="/blog/raw-to-jpg">RAW to JPG Conversion: Professional Photography Guide</a>
+            </h2>
+            
+            <p class="text-gray-600 mb-4">
+              Convert RAW camera files to JPG. Professional techniques for photographers, color management, and batch processing workflows.
+            </p>
+            
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="text-xs bg-blue-100 text-blue-700 px-3 py-1 rounded-full">#raw</span>
+              <span class="text-xs bg-blue-100 text-blue-700 px-3 py-1 rounded-full">#photography</span>
+              <span class="text-xs bg-blue-100 text-blue-700 px-3 py-1 rounded-full">#professional</span>
+            </div>
+            
+            <div class="flex justify-end items-center">
+              <span class="text-sm text-gray-500">12 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Blog Post 9: SVG Guide -->
+        <article class="bg-white rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+          <div class="h-48 bg-gradient-to-br from-cyan-400 via-cyan-500 to-teal-600 flex items-center justify-center">
+            <div class="text-center">
+              <div class="text-6xl mb-2">🎯</div>
+              <div class="text-white font-bold text-lg">Vector Graphics</div>
+            </div>
+          </div>
+          
+          <div class="p-6">
+            <div class="flex items-center text-sm text-gray-500 mb-3">
+              <img src="https://via.placeholder.com/24" class="w-6 h-6 rounded-full mr-2" alt="Author" />
+              <span>Gourav Choudhary</span>
+              <span class="mx-2">•</span>
+              <span>Sep 12, 2025</span>
+            </div>
+            
+            <h2 class="text-2xl font-bold text-gray-800 mb-3 hover:text-blue-600 transition-colors">
+              <a href="/blog/svg-guide">SVG Complete Guide: Vector Graphics for Web</a>
+            </h2>
+            
+            <p class="text-gray-600 mb-4">
+              Everything about SVG format. Creating, editing, optimizing, and converting vector graphics for web use. Best practices included.
+            </p>
+            
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="text-xs bg-blue-100 text-blue-700 px-3 py-1 rounded-full">#svg</span>
+              <span class="text-xs bg-blue-100 text-blue-700 px-3 py-1 rounded-full">#vector</span>
+              <span class="text-xs bg-blue-100 text-blue-700 px-3 py-1 rounded-full">#web</span>
+            </div>
+            
+            <div class="flex justify-end items-center">
+              <span class="text-sm text-gray-500">11 min read</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Pagination -->
+      <div class="mt-12 flex justify-center">
+        <nav class="flex space-x-2">
+          <button class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">1</button>
+          <button class="px-4 py-2 bg-white text-gray-700 rounded-lg hover:bg-gray-100 transition-colors">2</button>
+          <button class="px-4 py-2 bg-white text-gray-700 rounded-lg hover:bg-gray-100 transition-colors">3</button>
+          <button class="px-4 py-2 bg-white text-gray-700 rounded-lg hover:bg-gray-100 transition-colors">
+            Next
+            <svg class="w-4 h-4 ml-1 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        </nav>
+      </div>
+
+      <!-- Newsletter Subscription - Enhanced -->
+      <section class="mt-16 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-xl p-8 text-center text-white">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">
+          Get Weekly Image Conversion Tips
+        </h2>
+        <p class="mb-6 text-blue-100 max-w-2xl mx-auto">
+          Subscribe to our newsletter for exclusive guides, optimization tips, and new format updates.
+        </p>
+        <form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+          <input 
+            type="email" 
+            placeholder="Enter your email" 
+            class="flex-1 px-4 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-white"
+            required
+          />
+          <button 
+            type="submit"
+            class="px-6 py-3 bg-white text-blue-600 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
+          >
+            Subscribe
+          </button>
+        </form>
+        <p class="mt-4 text-xs text-blue-200">Join 10,000+ subscribers. No spam. Unsubscribe anytime.</p>
+      </section>
+
+      <!-- Related Resources - NEW SECTION -->
+      <section class="mt-16">
+        <h2 class="text-2xl font-bold text-gray-800 mb-6">Quick Resources</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
+            <div class="text-3xl mb-3">📖</div>
+            <h3 class="font-semibold text-gray-800 mb-2">Format Cheat Sheet</h3>
+            <p class="text-sm text-gray-600 mb-4">Quick reference guide for choosing the right image format.</p>
+            <a href="/resources/format-cheatsheet" class="text-blue-600 hover:text-blue-700 font-medium text-sm">Download PDF →</a>
+          </div>
+          <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
+            <div class="text-3xl mb-3">🎥</div>
+            <h3 class="font-semibold text-gray-800 mb-2">Video Tutorials</h3>
+            <p class="text-sm text-gray-600 mb-4">Watch step-by-step video guides for complex conversions.</p>
+            <a href="/tutorials/videos" class="text-blue-600 hover:text-blue-700 font-medium text-sm">Watch Now →</a>
+          </div>
+          <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
+            <div class="text-3xl mb-3">💬</div>
+            <h3 class="font-semibold text-gray-800 mb-2">Community Forum</h3>
+            <p class="text-sm text-gray-600 mb-4">Ask questions and share tips with other users.</p>
+            <a href="/community" class="text-blue-600 hover:text-blue-700 font-medium text-sm">Join Discussion →</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Author Bio - NEW SECTION -->
+      <section class="mt-16 bg-gray-100 rounded-xl p-8">
+        <div class="flex flex-col md:flex-row items-center md:items-start gap-6">
+          <img src="https://via.placeholder.com/120" alt="Gourav Choudhary" class="w-24 h-24 rounded-full" />
+          <div>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">About the Author</h3>
+            <p class="text-gray-600 mb-3">
+              <strong>Gourav Choudhary</strong> is a full-stack developer and the creator of Snap2Format. 
+              With expertise in image processing and web optimization, he shares practical tips and guides 
+              to help users master image conversion techniques.
+            </p>
+            <div class="flex gap-4">
+              <a href="https://www.linkedin.com/in/gouravxchoudhary" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-700">LinkedIn</a>
+              <a href="https://github.com/gouravxchoudhary" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-700">GitHub</a>
+              <a href="https://x.com/Its_Gourav_09" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-700">Twitter</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="mt-12 bg-gradient-to-r from-purple-600 to-indigo-600 rounded-xl p-8 text-center text-white">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">
+          Ready to Apply These Techniques?
+        </h2>
+        <p class="mb-6 text-purple-100 max-w-2xl mx-auto">
+          Use Snap2Format to convert and optimize your images with the knowledge from our guides.
+        </p>
+        <a 
+          href="/" 
+          class="inline-block bg-white text-purple-600 px-8 py-3 rounded-lg font-semibold hover:bg-purple-50 transition-colors shadow-lg"
+        >
+          Start Converting Now →
+        </a>
+      </section>
+    </div>
+  </div>
+
+  <!-- UPDATED COMPREHENSIVE FOOTER -->
+  <footer class="bg-gradient-to-r from-gray-900 to-gray-800 text-white relative overflow-hidden">
+    <!-- Decorative background pattern -->
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute top-0 left-0 w-64 h-64 bg-blue-500 rounded-full filter blur-3xl"></div>
+      <div class="absolute bottom-0 right-0 w-96 h-96 bg-purple-500 rounded-full filter blur-3xl"></div>
+    </div>
+    
+    <!-- Newsletter section -->
+    <div class="relative border-b border-gray-700">
+      <div class="container mx-auto px-4 py-8">
+        <div class="flex flex-col md:flex-row items-center justify-between">
+          <div class="mb-4 md:mb-0">
+            <h3 class="text-2xl font-bold mb-2">Stay Updated</h3>
+            <p class="text-gray-300">Get notified about new features and image format support</p>
+          </div>
+          <div class="flex w-full md:w-auto">
+            <input 
+              type="email" 
+              placeholder="Enter your email"
+              class="px-4 py-3 bg-gray-700 rounded-l-lg focus:outline-none focus:bg-gray-600 flex-1 md:w-64 text-white placeholder-gray-400"
+            />
+            <button class="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-r-lg transition-colors font-semibold">
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Main footer content -->
+    <div class="relative container mx-auto px-4 py-12">
+      <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+        <!-- Brand section -->
+        <div class="col-span-2 lg:col-span-2">
+          <div class="flex items-center space-x-2 mb-4">
+            <div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <span class="text-2xl font-bold">Snap2Format</span>
+          </div>
+          <p class="text-gray-300 mb-4">The most powerful free online image converter. Convert between 20+ formats instantly with no signup required.</p>
+          
+          <!-- Social media icons -->
+          <div class="flex space-x-3">
+            <a href="https://www.facebook.com/gouravxchoudhary/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-gray-700 hover:bg-gray-600 rounded-lg flex items-center justify-center transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+            <a href="https://x.com/Its_Gourav_09" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-gray-700 hover:bg-gray-600 rounded-lg flex items-center justify-center transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/gouravxchoudhary09/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-gray-700 hover:bg-gray-600 rounded-lg flex items-center justify-center transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1112.324 0 6.162 6.162 0 01-12.324 0zM12 16a4 4 0 110-8 4 4 0 010 8zm4.965-10.405a1.44 1.44 0 112.881.001 1.44 1.44 0 01-2.881-.001z"/>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/gouravxchoudhary" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-gray-700 hover:bg-gray-600 rounded-lg flex items-center justify-center transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Quick Convert -->
+        <div class="col-span-1">
+          <h4 class="font-bold mb-4 text-white">Quick Convert</h4>
+          <ul class="space-y-2">
+            <li><a href="/?format=png" class="text-gray-400 hover:text-white transition-colors text-sm flex items-center group">
+              <svg class="w-4 h-4 mr-2 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+              JPG to PNG
+            </a></li>
+            <li><a href="/?format=jpg" class="text-gray-400 hover:text-white transition-colors text-sm flex items-center group">
+              <svg class="w-4 h-4 mr-2 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+              PNG to JPG
+            </a></li>
+            <li><a href="/?format=jpg" class="text-gray-400 hover:text-white transition-colors text-sm flex items-center group">
+              <svg class="w-4 h-4 mr-2 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+              HEIC to JPG
+            </a></li>
+            <li><a href="/?format=png" class="text-gray-400 hover:text-white transition-colors text-sm flex items-center group">
+              <svg class="w-4 h-4 mr-2 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+              WebP to PNG
+            </a></li>
+            <li><a href="/?format=jpg" class="text-gray-400 hover:text-white transition-colors text-sm flex items-center group">
+              <svg class="w-4 h-4 mr-2 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+              GIF to JPG
+            </a></li>
+            <li><a href="/?format=pdf" class="text-gray-400 hover:text-white transition-colors text-sm flex items-center group">
+              <svg class="w-4 h-4 mr-2 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+              Image to PDF
+            </a></li>
+          </ul>
+        </div>
+        
+        <!-- Formats -->
+        <div class="col-span-1">
+          <h4 class="font-bold mb-4 text-white">Formats</h4>
+          <ul class="space-y-2">
+            <li><span class="text-gray-400 text-sm">JPG/JPEG</span></li>
+            <li><span class="text-gray-400 text-sm">PNG</span></li>
+            <li><span class="text-gray-400 text-sm">WebP</span></li>
+            <li><span class="text-gray-400 text-sm">HEIC/HEIF</span></li>
+            <li><span class="text-gray-400 text-sm">GIF</span></li>
+            <li><span class="text-gray-400 text-sm">BMP</span></li>
+            <li><span class="text-gray-400 text-sm">TIFF</span></li>
+          </ul>
+        </div>
+        
+        <!-- Resources -->
+        <div class="col-span-1">
+          <h4 class="font-bold mb-4 text-white">Resources</h4>
+          <ul class="space-y-2">
+            <li><a href="/#how-it-works" class="text-gray-400 hover:text-white transition-colors text-sm">How It Works</a></li>
+            <li><a href="/#features" class="text-gray-400 hover:text-white transition-colors text-sm">Features</a></li>
+            <li><a href="/#formats" class="text-gray-400 hover:text-white transition-colors text-sm">All Formats</a></li>
+            <li><a href="/#faq" class="text-gray-400 hover:text-white transition-colors text-sm">FAQ</a></li>
+            <li><a href="/api-docs" class="text-gray-400 hover:text-white transition-colors text-sm">API Docs</a></li>
+            <li><a href="/blog" class="text-gray-400 hover:text-white transition-colors text-sm">Blog</a></li>
+          </ul>
+        </div>
+        
+        <!-- Company -->
+        <div class="col-span-1">
+          <h4 class="font-bold mb-4 text-white">Company</h4>
+          <ul class="space-y-2">
+            <li><a href="/about" class="text-gray-400 hover:text-white transition-colors text-sm">About Us</a></li>
+            <li><a href="/contact" class="text-gray-400 hover:text-white transition-colors text-sm">Contact</a></li>
+            <li><a href="/privacy" class="text-gray-400 hover:text-white transition-colors text-sm">Privacy Policy</a></li>
+            <li><a href="/terms" class="text-gray-400 hover:text-white transition-colors text-sm">Terms of Service</a></li>
+            <li><a href="/sitemap.xml" class="text-gray-400 hover:text-white transition-colors text-sm">Sitemap</a></li>
+            <li><a href="/careers" class="text-gray-400 hover:text-white transition-colors text-sm">Careers</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Stats section -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12 pt-8 border-t border-gray-700">
+        <div class="text-center">
+          <div class="text-3xl font-bold text-blue-400">1M+</div>
+          <div class="text-gray-400 text-sm mt-1">Images Converted</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold text-green-400">20+</div>
+          <div class="text-gray-400 text-sm mt-1">Formats Supported</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold text-purple-400">100%</div>
+          <div class="text-gray-400 text-sm mt-1">Free Forever</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold text-orange-400">256-bit</div>
+          <div class="text-gray-400 text-sm mt-1">SSL Encryption</div>
+        </div>
+      </div>
+      
+      <!-- Trust badges -->
+      <div class="mt-8 pt-8 border-t border-gray-700">
+        <div class="flex flex-wrap items-center justify-center gap-6">
+          <div class="flex items-center space-x-2 text-gray-400">
+            <svg class="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+            <span class="text-sm">SSL Secured</span>
+          </div>
+          <div class="flex items-center space-x-2 text-gray-400">
+            <svg class="w-5 h-5 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+            <span class="text-sm">GDPR Compliant</span>
+          </div>
+          <div class="flex items-center space-x-2 text-gray-400">
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+            <span class="text-sm">4.9/5 Rating</span>
+          </div>
+          <div class="flex items-center space-x-2 text-gray-400">
+            <svg class="w-5 h-5 text-red-400" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
+            </svg>
+            <span class="text-sm">Loved by Users</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Bottom bar -->
+    <div class="relative bg-gray-900 py-4">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row items-center justify-between">
+          <p class="text-gray-400 text-sm text-center md:text-left">
+            © 2025 Snap2Format - Free Online Image Converter. All rights reserved.
+          </p>
+          <p class="text-gray-500 text-xs mt-2 md:mt-0">
+            Made with ❤️ for creators worldwide | Convert images online free
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Pure JavaScript (No React dependencies) -->
+  <script>
+    // Mobile menu toggle
+    document.addEventListener('DOMContentLoaded', function() {
+      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      
+      if (mobileMenuBtn && mobileMenu) {
+        mobileMenuBtn.addEventListener('click', function() {
+          mobileMenu.classList.toggle('hidden');
+          
+          // Update button icon
+          const svg = mobileMenuBtn.querySelector('svg path');
+          if (mobileMenu.classList.contains('hidden')) {
+            svg.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+          } else {
+            svg.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+          }
+        });
+      }
+      
+      // Add smooth scroll for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

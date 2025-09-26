@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  
+  <!-- Enhanced SEO Meta Tags -->
+  <title>Privacy Policy - Data Protection & Security | Snap2Format 2025</title>
+  <meta name="title" content="Privacy Policy - Snap2Format Image Converter | Your Data is Safe">
+  <meta name="description" content="Snap2Format Privacy Policy: We never store, share, or access your images. Auto-deletion in 2 hours, 256-bit SSL encryption, GDPR/CCPA compliant. No registration required, no tracking cookies. Learn how we protect your privacy.">
+  <meta name="keywords" content="privacy policy, data protection, GDPR compliance, CCPA compliance, image converter privacy, secure file conversion, SSL encryption, data security, no cookies policy, auto delete files, privacy first converter, anonymous conversion, snap2format privacy">
+  <meta name="robots" content="index, follow, max-snippet:-1">
+  <meta name="author" content="Gourav Choudhary">
+  <meta name="language" content="English">
+  <meta name="revisit-after" content="30 days">
+  
+  <link rel="canonical" href="https://snap2format.onrender.com/privacy.html">
+  <link rel="alternate" hreflang="en" href="https://snap2format.onrender.com/privacy.html">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://snap2format.onrender.com/privacy.html">
+  <meta property="og:title" content="Privacy Policy - Snap2Format Protects Your Data">
+  <meta property="og:description" content="Learn how Snap2Format protects your privacy. No data storage, automatic deletion, SSL encryption, GDPR compliant.">
+  <meta property="og:image" content="https://snap2format.onrender.com/og-privacy.jpg">
+  <meta property="og:site_name" content="Snap2Format">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://snap2format.onrender.com/privacy.html">
+  <meta property="twitter:title" content="Privacy Policy - Snap2Format">
+  <meta property="twitter:description" content="Your privacy is our priority. Learn how we protect your data.">
+  <meta property="twitter:creator" content="@Its_Gourav_09">
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "PrivacyPolicy",
+    "name": "Snap2Format Privacy Policy",
+    "description": "Privacy policy for Snap2Format image converter service",
+    "url": "https://snap2format.onrender.com/privacy.html",
+    "datePublished": "2020-01-01",
+    "dateModified": "2025-01-01",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Snap2Format",
+      "url": "https://snap2format.onrender.com"
+    },
+    "text": "We never store, share, or access your images. Auto-deletion in 2 hours, 256-bit SSL encryption, GDPR compliant."
+  }
+  </script>
+  
+  <!-- PWA & Mobile -->
+  <meta name="theme-color" content="#2563eb">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no">
+  
+  <!-- Smooth Scrolling CSS -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 80px;
+    }
+    
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+      background: #2563eb;
+      border-radius: 5px;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+      background: #1d4ed8;
+    }
+    
+    /* Enhanced Mobile Responsiveness */
+    @media (max-width: 640px) {
+      .container {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+      }
+      
+      button, a {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      h1 { font-size: 1.875rem !important; }
+      h2 { font-size: 1.5rem !important; }
+      h3 { font-size: 1.25rem !important; }
+      
+      .toc-mobile {
+        position: static !important;
+        width: 100% !important;
+        margin-bottom: 2rem;
+      }
+    }
+    
+    /* Accessibility */
+    :focus-visible {
+      outline: 3px solid #3B82F6;
+      outline-offset: 2px;
+    }
+    
+    /* Table of Contents */
+    .toc {
+      position: sticky;
+      top: 100px;
+    }
+    
+    /* Print Styles */
+    @media print {
+      header, footer, .no-print {
+        display: none !important;
+      }
+      
+      body {
+        font-size: 12pt;
+      }
+      
+      h1, h2, h3 {
+        page-break-after: avoid;
+      }
+      
+      section {
+        page-break-inside: avoid;
+      }
+    }
+  </style>
+  
+  <!-- External Scripts -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/react@18.2.0/umd/react.production.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.18.9/babel.min.js"></script>
+</head>
+<body class="bg-gray-50 min-h-screen">
+  <div id="root"></div>
+  
+  <script type="text/babel">
+    const { useState, useEffect } = React;
+
+    function PrivacyPolicy() {
+      const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+      const [activeSection, setActiveSection] = useState('');
+
+      useEffect(() => {
+        // Highlight active section in table of contents
+        const handleScroll = () => {
+          const sections = document.querySelectorAll('section[id]');
+          let current = '';
+          
+          sections.forEach(section => {
+            const rect = section.getBoundingClientRect();
+            if (rect.top <= 150 && rect.bottom >= 150) {
+              current = section.id;
+            }
+          });
+          
+          setActiveSection(current);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+      }, []);
+
+      const scrollToSection = (sectionId) => {
+        document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+      };
+
+      return (
+        <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50">
+          {/* Header with Navigation */}
+          <header className="bg-blue-600 text-white shadow-lg sticky top-0 z-50">
+            <nav className="container mx-auto px-4 py-4 md:py-6">
+              <div className="flex justify-between items-center">
+                <div className="flex items-center space-x-2">
+                  <a href="/" className="text-xl md:text-3xl font-bold hover:text-blue-200 transition-colors" aria-label="Home">Snap2Format</a>
+                </div>
+                
+                {/* Mobile Menu Button */}
+                <button 
+                  onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                  className="md:hidden p-2 rounded-lg hover:bg-blue-700 transition-colors"
+                  aria-label="Toggle menu"
+                >
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    {isMobileMenuOpen ? (
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                    ) : (
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+                    )}
+                  </svg>
+                </button>
+                
+                {/* Desktop Navigation */}
+                <div className="hidden md:flex space-x-6">
+                  <a href="/" className="hover:text-blue-200 transition-colors">Home</a>
+                  <a href="/about.html" className="hover:text-blue-200 transition-colors">About</a>
+                  <a href="/blog" className="hover:text-blue-200 transition-colors">Blog</a>
+                  <a href="/#faq" className="hover:text-blue-200 transition-colors">FAQ</a>
+                  <a href="/contact.html" className="hover:text-blue-200 transition-colors">Contact</a>
+                </div>
+              </div>
+              
+              {/* Mobile Navigation */}
+              {isMobileMenuOpen && (
+                <div className="md:hidden mt-4 pb-2 border-t border-blue-500 pt-4">
+                  <a href="/" className="block py-2 hover:text-blue-200 transition-colors">Home</a>
+                  <a href="/about.html" className="block py-2 hover:text-blue-200 transition-colors">About</a>
+                  <a href="/blog" className="block py-2 hover:text-blue-200 transition-colors">Blog</a>
+                  <a href="/#faq" className="block py-2 hover:text-blue-200 transition-colors">FAQ</a>
+                  <a href="/contact.html" className="block py-2 hover:text-blue-200 transition-colors">Contact</a>
+                </div>
+              )}
+            </nav>
+          </header>
+
+          {/* Hero Section */}
+          <section className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-12 md:py-16">
+            <div className="container mx-auto px-4 text-center">
+              <h1 className="text-3xl md:text-5xl font-bold mb-4">Privacy Policy</h1>
+              <p className="text-lg md:text-xl text-blue-100 max-w-3xl mx-auto mb-4">
+                Your privacy is our top priority. We protect your data with industry-leading security measures.
+              </p>
+              <div className="flex flex-wrap justify-center gap-4 mt-6">
+                <div className="bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2 flex items-center">
+                  <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  <span>GDPR Compliant</span>
+                </div>
+                <div className="bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2 flex items-center">
+                  <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  <span>CCPA Compliant</span>
+                </div>
+                <div className="bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2 flex items-center">
+                  <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  <span>SSL Encrypted</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Privacy Policy Content with Table of Contents */}
+          <main className="container mx-auto px-4 py-8 md:py-12">
+            <div className="max-w-7xl mx-auto">
+              <div className="grid lg:grid-cols-4 gap-8">
+                {/* Table of Contents - Sidebar */}
+                <div className="lg:col-span-1">
+                  <div className="bg-white rounded-lg shadow-lg p-6 toc toc-mobile">
+                    <h3 className="font-bold text-gray-800 mb-4">Table of Contents</h3>
+                    <nav className="space-y-2">
+                      {[
+                        { id: 'overview', title: 'Overview' },
+                        { id: 'introduction', title: '1. Introduction' },
+                        { id: 'no-collection', title: '2. What We DON\'T Collect' },
+                        { id: 'file-handling', title: '3. File Handling' },
+                        { id: 'data-security', title: '4. Data Security' },
+                        { id: 'cookies', title: '5. Cookies & Tracking' },
+                        { id: 'server-logs', title: '6. Server Logs' },
+                        { id: 'third-party', title: '7. Third-Party Services' },
+                        { id: 'children', title: '8. Children\'s Privacy' },
+                        { id: 'international', title: '9. International Users' },
+                        { id: 'your-rights', title: '10. Your Rights' },
+                        { id: 'changes', title: '11. Policy Changes' },
+                        { id: 'contact-privacy', title: '12. Contact Us' }
+                      ].map(section => (
+                        <button
+                          key={section.id}
+                          onClick={() => scrollToSection(section.id)}
+                          className={`block w-full text-left px-3 py-2 rounded text-sm transition-colors ${
+                            activeSection === section.id 
+                              ? 'bg-blue-100 text-blue-700 font-semibold' 
+                              : 'text-gray-600 hover:bg-gray-100'
+                          }`}
+                        >
+                          {section.title}
+                        </button>
+                      ))}
+                    </nav>
+                  </div>
+                </div>
+
+                {/* Main Content */}
+                <div className="lg:col-span-3 bg-white rounded-lg shadow-lg p-6 md:p-10">
+                  <p className="text-gray-600 mb-8">
+                    <strong>Last updated:</strong> January 1, 2025 | <strong>Effective Date:</strong> January 1, 2020
+                  </p>
+
+                  {/* Privacy Overview - NEW */}
+                  <section id="overview" className="mb-12">
+                    <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-6 border-l-4 border-green-500">
+                      <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                        <svg className="w-8 h-8 mr-3 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                        </svg>
+                        Privacy at a Glance
+                      </h2>
+                      <div className="grid md:grid-cols-2 gap-4 text-gray-700">
+                        <div className="flex items-start">
+                          <svg className="w-5 h-5 mr-2 mt-1 text-green-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                          </svg>
+                          <span><strong>No Registration:</strong> Use our service anonymously</span>
+                        </div>
+                        <div className="flex items-start">
+                          <svg className="w-5 h-5 mr-2 mt-1 text-green-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                          </svg>
+                          <span><strong>Auto-Delete:</strong> Files removed after 2 hours</span>
+                        </div>
+                        <div className="flex items-start">
+                          <svg className="w-5 h-5 mr-2 mt-1 text-green-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                          </svg>
+                          <span><strong>No Cookies:</strong> Zero tracking cookies</span>
+                        </div>
+                        <div className="flex items-start">
+                          <svg className="w-5 h-5 mr-2 mt-1 text-green-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                          </svg>
+                          <span><strong>256-bit SSL:</strong> Military-grade encryption</span>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+
+                  <div className="space-y-8">
+                    <section id="introduction">
+                      <h2 className="text-2xl font-semibold text-gray-800 mb-4">1. Introduction</h2>
+                      <p className="text-gray-600 leading-relaxed">
+                        Welcome to Snap2Format ("we," "our," or "us"). We are committed to protecting your personal information and your right to privacy. 
+                        This Privacy Policy explains how we handle your information when you use our image conversion service at snap2format.onrender.com.
+                      </p>
+                      <p className="text-gray-600 leading-relaxed mt-3">
+                        <strong>Key Point:</strong> We operate on a privacy-first principle. Our service is designed to function without collecting personal data, 
+                        ensuring your image conversion activities remain completely private.
+                      </p>
+                    </section>
+
+                    <section id="no-collection">
+                      <h2 className="text-2xl font-semibold text-gray-800 mb-4">2. Information We Do NOT Collect</h2>
+                      <div className="bg-green-50 border-l-4 border-green-500 p-4 mb-4">
+                        <p className="text-green-800 font-semibold mb-2">We prioritize your privacy by NOT collecting:</p>
+                        <ul className="list-disc list-inside text-gray-700 space-y-2">
+                          <li><strong>Personal Information:</strong> No names, email addresses, or contact details</li>
+                          <li><strong>Account Data:</strong> No registration or login required</li>
+                          <li><strong>Tracking Cookies:</strong> No cookies for user tracking or analytics</li>
+                          <li><strong>Image Content:</strong> We never access or view your images</li>
+                          <li><strong>Metadata:</strong> EXIF data and other metadata are not stored</li>
+                          <li><strong>Usage Patterns:</strong> No tracking of conversion history</li>
+                          <li><strong>Device Information:</strong> No collection of device IDs or fingerprinting</li>
+                          <li><strong>Location Data:</strong> No GPS or IP-based location tracking</li>
+                        </ul>
+                      </div>
+                    </section>
+
+                    <section id="file-handling">
+                      <h2 className="text-2xl font-semibold text-gray-800 mb-4">3. How We Handle Your Files</h2>
+                      <div className="space-y-4">
+                        <div className="flex items-start space-x-3">
+                          <div className="bg-blue-100 rounded-full p-2 mt-1">
+                            <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                            </svg>
+                          </div>
+                          <div>
+                            <h3 className="font-semibold text-gray-800">Upload Process</h3>
+                            <p className="text-gray-600">Files are transmitted using 256-bit SSL/TLS encryption. They are temporarily stored in isolated server memory only for the duration of processing.</p>
+                          </div>
+                        </div>
+
+                        <div className="flex items-start space-x-3">
+                          <div className="bg-blue-100 rounded-full p-2 mt-1">
+                            <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                          </div>
+                          <div>
+                            <h3 className="font-semibold text-gray-800">Conversion Process</h3>
+                            <p className="text-gray-600">Images are processed automatically by our conversion algorithms without human access or intervention. Processing occurs in isolated containers that are destroyed after use.</p>
+                          </div>
+                        </div>
+
+                        <div className="flex items-start space-x-3">
+                          <div className="bg-blue-100 rounded-full p-2 mt-1">
+                            <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                          </div>
+                          <div>
+                            <h3 className="font-semibold text-gray-800">Automatic Deletion</h3>
+                            <p className="text-gray-600">All uploaded files and converted images are permanently deleted from our servers after 2 hours. This deletion is automatic and irreversible.</p>
+                          </div>
+                        </div>
+
+                        <div className="flex items-start space-x-3">
+                          <div className="bg-blue-100 rounded-full p-2 mt-1">
+                            <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                            </svg>
+                          </div>
+                          <div>
+                            <h3 className="font-semibold text-gray-800">Zero Recovery</h3>
+                            <p className="text-gray-600">Once deleted, files cannot be recovered by anyone, including us. We maintain no backups of user files.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+
+                    <section id="data-security">
+                      <h2 className="text-2xl font-semibold text-gray-800 mb-4">4. Data Security Measures</h2>
+                      <p className="text-gray-600 leading-relaxed mb-4">
+                        We implement industry-leading security measures to protect your files during the conversion process:
+                      </p>
+                      <div className="grid md:grid-cols-2 gap-4">
+                        <div className="bg-gray-50 rounded-lg p-4">
+                          <h4 className="font-semibold text-gray-800 mb-2">Technical Safeguards</h4>
+                          <ul className="list-disc list-inside text-gray-600 space-y-1 text-sm">
+                            <li>256-bit SSL/TLS encryption for all transfers</li>
+                            <li>Isolated processing containers</li>
+                            <li>Firewall protection and DDoS mitigation</li>
+                            <li>Regular security audits and penetration testing</li>
+                            <li>Encrypted server storage (temporary)</li>
+                          </ul>
+                        </div>
+                        <div className="bg-gray-50 rounded-lg p-4">
+                          <h4 className="font-semibold text-gray-800 mb-2">Operational Security</h4>
+                          <ul className="list-disc list-inside text-gray-600 space-y-1 text-sm">
+                            <li>No employee access to user files</li>
+                            <li>Automated processing without human intervention</li>
+                            <li>Regular security training for our team</li>
+                            <li>Incident response procedures</li>
+                            <li>24/7 security monitoring</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </section>
+
+                    <section id="cookies">
+                      <h2 className="text-2xl font-semibold text-gray-800 mb-4">5. Cookies & Tracking Policy</h2>
+                      <div className="bg-blue-50 rounded-lg p-6">
+                        <h3 className="font-semibold text-gray-800 mb-3">Our No-Cookie Commitment</h3>
+                        <p className="text-gray-600 mb-3">
+                          Snap2Format does not use cookies for tracking, analytics, or advertising purposes. We believe in providing a completely anonymous service.
+                        </p>
+                        <h4 className="font-semibold text-gray-700 mb-2">Technical Cookies (Optional)</h4>
+                        <p className="text-gray-600 text-sm">
+                          We may use minimal session cookies solely for technical functionality (e.g., maintaining conversion settings during your session). 
+                          These cookies:
+                        </p>
+                        <ul className="list-disc list-inside text-gray-600 text-sm mt-2 space-y-1">
+                          <li>Contain no personal information</li>
+                          <li>Are deleted when you close your browser</li>
+                          <li>Are not shared with third parties</li>
+                          <li>Can be blocked without affecting core functionality</li>
+                        </ul>
+                      </div>
+                    </section>
+
+                    <section id="server-logs">
+                      <h2 className="text-2xl font-semibold text-gray-800 mb-4">6. Server Logs</h2>
+                      <p className="text-gray-600 leading-relaxed mb-4">
+                        Our servers automatically log limited technical information for security and maintenance purposes:
+                      </p>
+                      <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4">
+                        <p className="text-gray-700 mb-2"><strong>What we log:</strong></p>
+                        <ul className="list-disc list-inside text-gray-600 space-y-1 text-sm">
+                          <li>Anonymized IP addresses (last octet removed)</li>
+                          <li>Browser type and version</li>
+                          <li>Timestamp of access</li>
+                          <li>Page requested</li>
+                          <li>HTTP response codes</li>
+                        </ul>
+                        <p className="text-gray-700 mt-3"><strong>Important:</strong> These logs are automatically deleted after 30 days and are never used for tracking individual users or marketing purposes.</p>
+                      </div>
+                    </section>
+
+                    <section id="third-party">
+                      <h2 className="text-2xl font-semibold text-gray-800 mb-4">7. Third-Party Services</h2>
+                      <p className="text-gray-600 leading-relaxed mb-4">
+                        We minimize the use of third-party services to protect your privacy:
+                      </p>
+                      <div className="space-y-3">
+                        <div className="bg-gray-50 rounded-lg p-4">
+                          <h4 className="font-semibold text-gray-800 mb-2">Content Delivery Network (CDN)</h4>
+                          <p className="text-gray-600 text-sm">
+                            We use Cloudflare CDN to deliver our website faster globally. Cloudflare may process minimal technical data according to their privacy policy, but no user files pass through the CDN.
+                          </p>
+                        </div>
+                        <div className="bg-gray-50 rounded-lg p-4">
+                          <h4 className="font-semibold text-gray-800 mb-2">No Analytics or Advertising</h4>
+                          <p className="text-gray-600 text-sm">
+                            We do not use Google Analytics, Facebook Pixel, or any other tracking/advertising services. Your usage remains completely private.
+                          </p>
+                        </div>
+                      </div>
+                    </section>
+
+                    <section id="children">
+                      <h2 className="text-2xl font-semibold text-gray-800 mb-4">8. Children's Privacy</h2>
+                      <div className="bg-purple-50 rounded-lg p-6">
+                        <p className="text-gray-700 mb-3">
+                          Our service is safe for users of all ages because:
+                        </p>
+                        <ul className="list-disc list-inside text-gray-600 space-y-2">
+                          <li>We don't collect any personal information from anyone, including children</li>
+                          <li>No registration or account creation is required</li>
+                          <li>No social features or user interaction</li>
+                          <li>No targeted advertising or marketing</li>
+                        </ul>
+                        <p className="text-gray-700 mt-3">
+                          <strong>COPPA Compliance:</strong> We comply with the Children's Online Privacy Protection Act (COPPA) by not collecting personal information from users under 13.
+                        </p>
+                      </div>
+                    </section>
+
+                    <section id="international">
+                      <h2 className="text-2xl font-semibold text-gray-800 mb-4">9. International Users</h2>
+                      <p className="text-gray-600 leading-relaxed mb-4">
+                        Our service is available globally. By using our service, you acknowledge that your files may be processed on servers located in different countries.
+                      </p>
+                      <div className="grid md:grid-cols-2 gap-4">
+                        <div className="bg-blue-50 rounded-lg p-4">
+                          <h4 className="font-semibold text-gray-800 mb-2">🇪🇺 EU Users (GDPR)</h4>
+                          <p className="text-gray-600 text-sm">
+                            We comply with GDPR requirements by:
+                          </p>
+                          <ul className="list-disc list-inside text-gray-600 text-sm mt-2 space-y-1">
+                            <li>Minimizing data collection</li>
+                            <li>Ensuring data portability</li>
+                            <li>Providing transparent policies</li>
+                            <li>Implementing security measures</li>
+                          </ul>
+                        </div>
+                        <div className="bg-blue-50 rounded-lg p-4">
+                          <h4 className="font-semibold text-gray-800 mb-2">🇺🇸 California Users (CCPA)</h4>
+                          <p className="text-gray-600 text-sm">
+                            We comply with CCPA requirements by:
+                          </p>
+                          <ul className="list-disc list-inside text-gray-600 text-sm mt-2 space-y-1">
+                            <li>Not selling personal information</li>
+                            <li>Providing privacy rights notices</li>
+                            <li>Honoring opt-out requests</li>
+                            <li>Equal service regardless of privacy choices</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </section>
+
+                    <section id="your-rights">
+                      <h2 className="text-2xl font-semibold text-gray-800 mb-4">10. Your Privacy Rights</h2>
+                      <p className="text-gray-600 leading-relaxed mb-4">
+                        Regardless of your location, you have the following rights:
+                      </p>
+                      <div className="space-y-3">
+                        <div className="flex items-start space-x-3">
+                          <svg className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                          </svg>
+                          <div>
+                            <strong className="text-gray-800">Right to Access:</strong>
+                            <p className="text-gray-600 text-sm">Since we don't collect personal data, there's no personal information to access.</p>
+                          </div>
+                        </div>
+                        <div className="flex items-start space-x-3">
+                          <svg className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                          </svg>
+                          <div>
+                            <strong className="text-gray-800">Right to Deletion:</strong>
+                            <p className="text-gray-600 text-sm">Files are automatically deleted after 2 hours. No manual deletion request needed.</p>
+                          </div>
+                        </div>
+                        <div className="flex items-start space-x-3">
+                          <svg className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                          </svg>
+                          <div>
+                            <strong className="text-gray-800">Right to Opt-Out:</strong>
+                            <p className="text-gray-600 text-sm">No tracking or marketing to opt out from.</p>
+                          </div>
+                        </div>
+                        <div className="flex items-start space-x-3">
+                          <svg className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                          </svg>
+                          <div>
+                            <strong className="text-gray-800">Right to Data Portability:</strong>
+                            <p className="text-gray-600 text-sm">Your converted files are immediately available for download.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+
+                    <section id="changes">
+                      <h2 className="text-2xl font-semibold text-gray-800 mb-4">11. Changes to This Policy</h2>
+                      <p className="text-gray-600 leading-relaxed mb-4">
+                        We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. 
+                      </p>
+                      <div className="bg-gray-50 rounded-lg p-6">
+                        <h4 className="font-semibold text-gray-800 mb-2">How We Notify You</h4>
+                        <ul className="list-disc list-inside text-gray-600 space-y-2 text-sm">
+                          <li>Updates will be posted on this page with a new "Last updated" date</li>
+                          <li>Major changes will include a prominent notice on our homepage</li>
+                          <li>The "Effective Date" will indicate when changes take effect</li>
+                          <li>Continued use after changes constitutes acceptance</li>
+                        </ul>
+                      </div>
+                    </section>
+
+                    <section id="contact-privacy">
+                      <h2 className="text-2xl font-semibold text-gray-800 mb-4">12. Contact Us</h2>
+                      <p className="text-gray-600 leading-relaxed mb-4">
+                        If you have questions about this Privacy Policy or our privacy practices, please contact us:
+                      </p>
+                      <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg p-6">
+                        <div className="space-y-3">
+                          <div className="flex items-center space-x-3">
+                            <svg className="w-5 h-5 text-blue-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            <div>
+                              <strong className="text-gray-800">Email:</strong> 
+                              <a href="mailto:gouravchoudharyoffical@gmail.com" className="text-blue-600 hover:underline">gouravchoudharyoffical@gmail.com</a>
+                            </div>
+                          </div>
+                          <div className="flex items-center space-x-3">
+                            <svg className="w-5 h-5 text-blue-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                            </svg>
+                            <div>
+                              <strong className="text-gray-800">Website:</strong> 
+                              <a href="/" className="text-blue-600 hover:underline">snap2format.onrender.com</a>
+                            </div>
+                          </div>
+                          <div className="flex items-center space-x-3">
+                            <svg className="w-5 h-5 text-blue-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                            </svg>
+                            <div>
+                              <strong className="text-gray-800">Data Protection Officer:</strong> Gourav Choudhary
+                            </div>
+                          </div>
+                          <div className="flex items-center space-x-3">
+                            <svg className="w-5 h-5 text-blue-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <div>
+                              <strong className="text-gray-800">Response Time:</strong> Within 48 hours
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+
+                    {/* Additional Transparency Section - NEW */}
+                    <section className="mt-12 bg-gradient-to-r from-gray-100 to-blue-50 rounded-lg p-6">
+                      <h2 className="text-2xl font-semibold text-gray-800 mb-4">Our Transparency Report</h2>
+                      <div className="grid md:grid-cols-3 gap-4">
+                        <div className="bg-white rounded-lg p-4 text-center">
+                          <div className="text-3xl font-bold text-blue-600">0</div>
+                          <div className="text-gray-600 text-sm mt-2">Data Breaches</div>
+                          <div className="text-xs text-gray-500 mt-1">Since 2020</div>
+                        </div>
+                        <div className="bg-white rounded-lg p-4 text-center">
+                          <div className="text-3xl font-bold text-green-600">0</div>
+                          <div className="text-gray-600 text-sm mt-2">User Data Sold</div>
+                          <div className="text-xs text-gray-500 mt-1">Forever Promise</div>
+                        </div>
+                        <div className="bg-white rounded-lg p-4 text-center">
+                          <div className="text-3xl font-bold text-purple-600">100%</div>
+                          <div className="text-gray-600 text-sm mt-2">Anonymous Usage</div>
+                          <div className="text-xs text-gray-500 mt-1">No Tracking</div>
+                        </div>
+                      </div>
+                      <p className="text-gray-600 text-sm mt-4 text-center">
+                        Last Security Audit: December 2024 | Next Scheduled: March 2025
+                      </p>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+
+          {/* Call to Action */}
+          <section className="py-12 md:py-16 bg-gradient-to-r from-blue-600 to-indigo-600 text-white">
+            <div className="container mx-auto px-4 text-center">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Convert Images with Complete Privacy</h2>
+              <p className="text-lg md:text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+                Experience secure, anonymous image conversion with military-grade encryption and zero data retention.
+              </p>
+              <a 
+                href="/" 
+                className="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-50 transition-colors shadow-lg"
+              >
+                Start Converting Securely →
+              </a>
+            </div>
+          </section>
+
+          {/* UPDATED COMPREHENSIVE FOOTER */}
+          <footer className="bg-gradient-to-r from-gray-900 to-gray-800 text-white relative overflow-hidden">
+            {/* Decorative background pattern */}
+            <div className="absolute inset-0 opacity-10">
+              <div className="absolute top-0 left-0 w-64 h-64 bg-blue-500 rounded-full filter blur-3xl"></div>
+              <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-500 rounded-full filter blur-3xl"></div>
+            </div>
+            
+            {/* Newsletter section */}
+            <div className="relative border-b border-gray-700">
+              <div className="container mx-auto px-4 py-8">
+                <div className="flex flex-col md:flex-row items-center justify-between">
+                  <div className="mb-4 md:mb-0">
+                    <h3 className="text-2xl font-bold mb-2">Stay Updated</h3>
+                    <p className="text-gray-300">Get notified about new features and image format support</p>
+                  </div>
+                  <div className="flex w-full md:w-auto">
+                    <input 
+                      type="email" 
+                      placeholder="Enter your email"
+                      className="px-4 py-3 bg-gray-700 rounded-l-lg focus:outline-none focus:bg-gray-600 flex-1 md:w-64 text-white placeholder-gray-400"
+                    />
+                    <button className="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-r-lg transition-colors font-semibold">
+                      Subscribe
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            {/* Main footer content */}
+            <div className="relative container mx-auto px-4 py-12">
+              <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+                {/* Brand section */}
+                <div className="col-span-2 lg:col-span-2">
+                  <div className="flex items-center space-x-2 mb-4">
+                    <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
+                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                      </svg>
+                    </div>
+                    <span className="text-2xl font-bold">Snap2Format</span>
+                  </div>
+                  <p className="text-gray-300 mb-4">The most powerful free online image converter. Convert between 20+ formats instantly with no signup required.</p>
+                  
+                  {/* Social media icons */}
+                  <div className="flex space-x-3">
+                    <a href="https://www.facebook.com/gouravxchoudhary/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-700 hover:bg-gray-600 rounded-lg flex items-center justify-center transition-colors">
+                      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                      </svg>
+                    </a>
+                    <a href="https://x.com/Its_Gourav_09" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-700 hover:bg-gray-600 rounded-lg flex items-center justify-center transition-colors">
+                      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                      </svg>
+                    </a>
+                    <a href="https://www.instagram.com/gouravxchoudhary09/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-700 hover:bg-gray-600 rounded-lg flex items-center justify-center transition-colors">
+                      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1112.324 0 6.162 6.162 0 01-12.324 0zM12 16a4 4 0 110-8 4 4 0 010 8zm4.965-10.405a1.44 1.44 0 112.881.001 1.44 1.44 0 01-2.881-.001z"/>
+                      </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/gouravxchoudhary" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-700 hover:bg-gray-600 rounded-lg flex items-center justify-center transition-colors">
+                      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                
+                {/* Quick Convert */}
+                <div className="col-span-1">
+                  <h4 className="font-bold mb-4 text-white">Quick Convert</h4>
+                  <ul className="space-y-2">
+                    <li><a href="/?format=png" className="text-gray-400 hover:text-white transition-colors text-sm flex items-center group">
+                      <svg className="w-4 h-4 mr-2 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                      </svg>
+                      JPG to PNG
+                    </a></li>
+                    <li><a href="/?format=jpg" className="text-gray-400 hover:text-white transition-colors text-sm flex items-center group">
+                      <svg className="w-4 h-4 mr-2 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                      </svg>
+                      PNG to JPG
+                    </a></li>
+                    <li><a href="/?format=jpg" className="text-gray-400 hover:text-white transition-colors text-sm flex items-center group">
+                      <svg className="w-4 h-4 mr-2 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                      </svg>
+                      HEIC to JPG
+                    </a></li>
+                    <li><a href="/?format=png" className="text-gray-400 hover:text-white transition-colors text-sm flex items-center group">
+                      <svg className="w-4 h-4 mr-2 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                      </svg>
+                      WebP to PNG
+                    </a></li>
+                    <li><a href="/?format=jpg" className="text-gray-400 hover:text-white transition-colors text-sm flex items-center group">
+                      <svg className="w-4 h-4 mr-2 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                      </svg>
+                      GIF to JPG
+                    </a></li>
+                    <li><a href="/?format=pdf" className="text-gray-400 hover:text-white transition-colors text-sm flex items-center group">
+                      <svg className="w-4 h-4 mr-2 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                      </svg>
+                      Image to PDF
+                    </a></li>
+                  </ul>
+                </div>
+                
+                {/* Formats */}
+                <div className="col-span-1">
+                  <h4 className="font-bold mb-4 text-white">Formats</h4>
+                  <ul className="space-y-2">
+                    <li><span className="text-gray-400 text-sm">JPG/JPEG</span></li>
+                    <li><span className="text-gray-400 text-sm">PNG</span></li>
+                    <li><span className="text-gray-400 text-sm">WebP</span></li>
+                    <li><span className="text-gray-400 text-sm">HEIC/HEIF</span></li>
+                    <li><span className="text-gray-400 text-sm">GIF</span></li>
+                    <li><span className="text-gray-400 text-sm">BMP</span></li>
+                    <li><span className="text-gray-400 text-sm">TIFF</span></li>
+                  </ul>
+                </div>
+                
+                {/* Resources */}
+                <div className="col-span-1">
+                  <h4 className="font-bold mb-4 text-white">Resources</h4>
+                  <ul className="space-y-2">
+                    <li><a href="/#how-it-works" className="text-gray-400 hover:text-white transition-colors text-sm">How It Works</a></li>
+                    <li><a href="/#features" className="text-gray-400 hover:text-white transition-colors text-sm">Features</a></li>
+                    <li><a href="/#formats" className="text-gray-400 hover:text-white transition-colors text-sm">All Formats</a></li>
+                    <li><a href="/#faq" className="text-gray-400 hover:text-white transition-colors text-sm">FAQ</a></li>
+                    <li><a href="/api-docs" className="text-gray-400 hover:text-white transition-colors text-sm">API Docs</a></li>
+                    <li><a href="/blog" className="text-gray-400 hover:text-white transition-colors text-sm">Blog</a></li>
+                  </ul>
+                </div>
+                
+                {/* Company */}
+                <div className="col-span-1">
+                  <h4 className="font-bold mb-4 text-white">Company</h4>
+                  <ul className="space-y-2">
+                    <li><a href="/about" className="text-gray-400 hover:text-white transition-colors text-sm">About Us</a></li>
+                    <li><a href="/contact" className="text-gray-400 hover:text-white transition-colors text-sm">Contact</a></li>
+                    <li><a href="/privacy" className="text-gray-400 hover:text-white transition-colors text-sm">Privacy Policy</a></li>
+                    <li><a href="/terms" className="text-gray-400 hover:text-white transition-colors text-sm">Terms of Service</a></li>
+                    <li><a href="/sitemap.xml" className="text-gray-400 hover:text-white transition-colors text-sm">Sitemap</a></li>
+                    <li><a href="/careers" className="text-gray-400 hover:text-white transition-colors text-sm">Careers</a></li>
+                  </ul>
+                </div>
+              </div>
+              
+              {/* Stats section */}
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12 pt-8 border-t border-gray-700">
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-blue-400">1M+</div>
+                  <div className="text-gray-400 text-sm mt-1">Images Converted</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-green-400">20+</div>
+                  <div className="text-gray-400 text-sm mt-1">Formats Supported</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-purple-400">100%</div>
+                  <div className="text-gray-400 text-sm mt-1">Free Forever</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-orange-400">256-bit</div>
+                  <div className="text-gray-400 text-sm mt-1">SSL Encryption</div>
+                </div>
+              </div>
+              
+              {/* Trust badges */}
+              <div className="mt-8 pt-8 border-t border-gray-700">
+                <div className="flex flex-wrap items-center justify-center gap-6">
+                  <div className="flex items-center space-x-2 text-gray-400">
+                    <svg className="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-sm">SSL Secured</span>
+                  </div>
+                  <div className="flex items-center space-x-2 text-gray-400">
+                    <svg className="w-5 h-5 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-sm">GDPR Compliant</span>
+                  </div>
+                  <div className="flex items-center space-x-2 text-gray-400">
+                    <svg className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                    <span className="text-sm">4.9/5 Rating</span>
+                  </div>
+                  <div className="flex items-center space-x-2 text-gray-400">
+                    <svg className="w-5 h-5 text-red-400" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-sm">Loved by Users</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            {/* Bottom bar */}
+            <div className="relative bg-gray-900 py-4">
+              <div className="container mx-auto px-4">
+                <div className="flex flex-col md:flex-row items-center justify-between">
+                  <p className="text-gray-400 text-sm text-center md:text-left">
+                    © 2025 Snap2Format - Free Online Image Converter. All rights reserved.
+                  </p>
+                  <p className="text-gray-500 text-xs mt-2 md:mt-0">
+                    Made with ❤️ for creators worldwide | Convert images online free
+                  </p>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      );
+    }
+
+    ReactDOM.render(<PrivacyPolicy />, document.getElementById('root'));
+  </script>
+</body>
+</html>
