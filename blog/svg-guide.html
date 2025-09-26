@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVG Format: Complete Guide | Snap2Format Blog</title>
+  <meta name="description" content="Master Scalable Vector Graphics (SVG) format. Learn creation, optimization, and best practices for using SVG in web projects. Complete guide by Gourav Choudhary.">
+  <meta name="keywords" content="svg format, vector graphics, web icons, responsive images, svg optimization, image formats">
+  <meta name="author" content="Gourav Choudhary">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://snap2format.onrender.com/blog/svg-guide">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="SVG Format: The Complete Guide 2025">
+  <meta property="og:description" content="Master SVG format for web graphics. Learn best practices for icons, animations, and responsive images.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://snap2format.onrender.com/blog/svg-guide">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 min-h-screen">
+  <!-- Header -->
+  <header class="bg-blue-600 text-white shadow-lg sticky top-0 z-50">
+    <nav class="container mx-auto px-4 py-4 md:py-6">
+      <div class="flex justify-between items-center">
+        <a href="/" class="text-xl md:text-3xl font-bold hover:text-blue-200 transition-colors">Snap2Format</a>
+        <div class="hidden md:flex space-x-6">
+          <a href="/blog.html" class="hover:text-blue-200 transition-colors font-semibold">Blog</a>
+          <a href="/about.html" class="hover:text-blue-200 transition-colors">About</a>
+          <a href="/contact.html" class="hover:text-blue-200 transition-colors">Contact</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-8 md:py-12">
+    <div class="max-w-4xl mx-auto">
+      <!-- Breadcrumb -->
+      <nav class="mb-6">
+        <a href="/" class="text-blue-600 hover:text-blue-800">Home</a>
+        <span class="mx-2 text-gray-500">/</span>
+        <a href="/blog.html" class="text-blue-600 hover:text-blue-800">Blog</a>
+        <span class="mx-2 text-gray-500">/</span>
+        <span class="text-gray-700">SVG Format Guide</span>
+      </nav>
+
+      <!-- Article -->
+      <article class="bg-white rounded-lg shadow-lg p-6 md:p-10">
+        <header class="mb-8">
+          <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            SVG Format: The Complete Guide to Vector Graphics on the Web
+          </h1>
+          <div class="flex items-center text-sm text-gray-600 space-x-4">
+            <span>By Gourav Choudhary</span>
+            <span>•</span>
+            <time datetime="2025-09-12">September 12, 2025</time>
+            <span>•</span>
+            <span>15 min read</span>
+          </div>
+        </header>
+
+        <div class="prose prose-lg max-w-none">
+          <section class="mb-8">
+            <p class="text-lg text-gray-700 leading-relaxed">
+              SVG (Scalable Vector Graphics) has become the go-to format for icons, logos, and illustrations on the web. 
+              This comprehensive guide will teach you everything about creating, optimizing, and using SVGs effectively in 
+              your projects.
+            </p>
+          </section>
+
+          <section class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">What You'll Learn</h2>
+            <ul class="space-y-2 text-gray-700">
+              <li>✅ Understanding SVG structure</li>
+              <li>✅ Creating and editing SVGs</li>
+              <li>✅ Optimization techniques</li>
+              <li>✅ Animation possibilities</li>
+              <li>✅ Best practices for web use</li>
+            </ul>
+          </section>
+
+          <section class="mb-10">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Why Choose SVG?</h2>
+            
+            <div class="grid md:grid-cols-3 gap-4 mb-6">
+              <div class="bg-green-50 p-4 rounded-lg">
+                <h3 class="font-bold text-green-800 mb-2">🔍 Scalability</h3>
+                <p class="text-sm text-gray-700">Perfect resolution at any size</p>
+              </div>
+              <div class="bg-blue-50 p-4 rounded-lg">
+                <h3 class="font-bold text-blue-800 mb-2">⚡ Performance</h3>
+                <p class="text-sm text-gray-700">Small file size for simple graphics</p>
+              </div>
+              <div class="bg-purple-50 p-4 rounded-lg">
+                <h3 class="font-bold text-purple-800 mb-2">🎨 Customization</h3>
+                <p class="text-sm text-gray-700">Style with CSS, animate with JS</p>
+              </div>
+            </div>
+
+            <div class="bg-yellow-50 border-l-4 border-yellow-500 p-4 mb-6">
+              <p class="text-sm text-gray-700">
+                <strong>Pro Tip:</strong> Use SVG for logos, icons, and simple illustrations. For complex photos, 
+                stick with raster formats like JPG or PNG.
+              </p>
+            </div>
+          </section>
+
+          <section class="mb-10">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">SVG Structure</h2>
+            
+            <pre class="bg-gray-800 text-white p-4 rounded overflow-x-auto text-sm mb-6">
+&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"&gt;
+  &lt;circle cx="50" cy="50" r="40" fill="blue"/&gt;
+  &lt;rect x="20" y="20" width="60" height="60" fill="red"/&gt;
+&lt;/svg&gt;</pre>
+
+            <h3 class="text-xl font-semibold text-gray-700 mb-3">Key Elements</h3>
+            <ul class="list-disc pl-6 mb-6 text-gray-700">
+              <li><code>svg</code>: Root element with viewBox</li>
+              <li><code>circle</code>, <code>rect</code>, <code>path</code>: Basic shapes</li>
+              <li><code>g</code>: Group elements</li>
+              <li><code>defs</code>: Define reusable elements</li>
+            </ul>
+          </section>
+
+          <section class="mb-10">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Creating SVGs</h2>
+            
+            <h3 class="text-xl font-semibold text-gray-700 mb-3">Tools & Software</h3>
+            <div class="grid md:grid-cols-2 gap-6 mb-6">
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h4 class="font-bold text-gray-800 mb-2">Professional</h4>
+                <ul class="text-sm text-gray-700 space-y-1">
+                  <li>• Adobe Illustrator</li>
+                  <li>• Figma</li>
+                  <li>• Sketch</li>
+                  <li>• Inkscape (Free)</li>
+                </ul>
+              </div>
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h4 class="font-bold text-gray-800 mb-2">Online Tools</h4>
+                <ul class="text-sm text-gray-700 space-y-1">
+                  <li>• Snap2Format</li>
+                  <li>• SVG Editor</li>
+                  <li>• Method Draw</li>
+                  <li>• Vectr</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section class="mb-10">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Optimization Techniques</h2>
+            
+            <h3 class="text-xl font-semibold text-gray-700 mb-3">1. Clean Up SVG Code</h3>
+            <ul class="list-disc pl-6 mb-6 text-gray-700">
+              <li>Remove unnecessary attributes</li>
+              <li>Simplify path data</li>
+              <li>Use shorter color codes</li>
+              <li>Remove empty groups</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold text-gray-700 mb-3">2. Minification</h3>
+            <p class="text-gray-700 mb-4">
+              Use tools like SVGO to reduce file size:
+            </p>
+            <pre class="bg-gray-800 text-white p-4 rounded overflow-x-auto text-sm mb-6">
+# Before optimization: 2.5KB
+&lt;svg xmlns="http://www.w3.org/2000/svg"&gt;
+  &lt;g transform="translate(0,0)"&gt;
+    &lt;path d="M10 10h100v100h-100z" style="fill: #ff0000;"/&gt;
+  &lt;/g&gt;
+&lt;/svg&gt;
+
+# After optimization: 95B
+&lt;svg xmlns="http://www.w3.org/2000/svg"&gt;&lt;path d="M10 10h100v100H10z" fill="red"/&gt;&lt;/svg&gt;</pre>
+          </section>
+
+          <section class="mb-10">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Using SVGs on the Web</h2>
+            
+            <h3 class="text-xl font-semibold text-gray-700 mb-3">1. Inline SVG</h3>
+            <pre class="bg-gray-800 text-white p-4 rounded overflow-x-auto text-sm mb-6">
+&lt;div&gt;
+  &lt;svg viewBox="0 0 100 100"&gt;
+    &lt;circle cx="50" cy="50" r="40"/&gt;
+  &lt;/svg&gt;
+&lt;/div&gt;</pre>
+
+            <h3 class="text-xl font-semibold text-gray-700 mb-3">2. As an Image</h3>
+            <pre class="bg-gray-800 text-white p-4 rounded overflow-x-auto text-sm mb-6">
+&lt;img src="icon.svg" alt="Icon description"&gt;</pre>
+
+            <h3 class="text-xl font-semibold text-gray-700 mb-3">3. CSS Background</h3>
+            <pre class="bg-gray-800 text-white p-4 rounded overflow-x-auto text-sm mb-6">
+.icon {
+  background-image: url('icon.svg');
+  background-size: contain;
+}</pre>
+          </section>
+
+          <section class="mb-10">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">SVG Animation</h2>
+            
+            <div class="space-y-6">
+              <div class="border-l-4 border-blue-500 pl-4">
+                <h3 class="font-bold text-gray-800 mb-2">CSS Animation</h3>
+                <pre class="bg-gray-800 text-white p-4 rounded overflow-x-auto text-sm">
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.spinning-icon {
+  animation: rotate 2s linear infinite;
+}</pre>
+              </div>
+              
+              <div class="border-l-4 border-blue-500 pl-4">
+                <h3 class="font-bold text-gray-800 mb-2">SMIL Animation</h3>
+                <pre class="bg-gray-800 text-white p-4 rounded overflow-x-auto text-sm">
+&lt;circle&gt;
+  &lt;animate 
+    attributeName="r" 
+    values="0;40;0" 
+    dur="2s" 
+    repeatCount="indefinite"/&gt;
+&lt;/circle&gt;</pre>
+              </div>
+            </div>
+          </section>
+
+          <section class="mb-10">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Converting to SVG</h2>
+            
+            <p class="text-gray-700 mb-4">
+              Use Snap2Format to convert various formats to SVG:
+            </p>
+
+            <ol class="list-decimal pl-6 mb-6 text-gray-700">
+              <li>Visit <a href="/" class="text-blue-600 hover:underline">Snap2Format</a></li>
+              <li>Upload your image (PNG, JPG, etc.)</li>
+              <li>Select SVG as output format</li>
+              <li>Adjust tracing settings if needed</li>
+              <li>Download your SVG file</li>
+            </ol>
+
+            <div class="bg-yellow-50 border-l-4 border-yellow-500 p-4">
+              <p class="text-sm text-gray-700">
+                <strong>Note:</strong> Vector tracing works best with simple, high-contrast images. Complex photos may not convert well to SVG.
+              </p>
+            </div>
+          </section>
+
+          <section class="mb-10">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Best Practices</h2>
+            
+            <div class="space-y-4">
+              <div class="border-l-4 border-green-500 pl-4">
+                <h3 class="font-bold text-gray-800 mb-2">1. Keep It Simple</h3>
+                <p class="text-gray-700">
+                  Minimize path points and avoid unnecessary complexity.
+                </p>
+              </div>
+              
+              <div class="border-l-4 border-green-500 pl-4">
+                <h3 class="font-bold text-gray-800 mb-2">2. Use Semantic IDs</h3>
+                <p class="text-gray-700">
+                  Name elements meaningfully for better maintenance.
+                </p>
+              </div>
+              
+              <div class="border-l-4 border-green-500 pl-4">
+                <h3 class="font-bold text-gray-800 mb-2">3. Optimize File Size</h3>
+                <p class="text-gray-700">
+                  Remove unnecessary metadata and minimize code.
+                </p>
+              </div>
+
+              <div class="border-l-4 border-green-500 pl-4">
+                <h3 class="font-bold text-gray-800 mb-2">4. Consider Accessibility</h3>
+                <p class="text-gray-700">
+                  Include proper ARIA labels and titles.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- CTA Section -->
+          <section class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-lg p-8 text-center">
+            <h2 class="text-2xl font-bold mb-4">Ready to Create SVGs?</h2>
+            <p class="mb-6">
+              Use Snap2Format to convert your images to SVG format. 
+              Perfect for logos, icons, and simple illustrations.
+            </p>
+            <a href="/" class="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
+              Start Converting Now →
+            </a>
+          </section>
+        </div>
+
+        <!-- Article Footer -->
+        <footer class="mt-12 pt-8 border-t border-gray-200">
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="text-sm bg-blue-100 text-blue-700 px-3 py-1 rounded-full">SVG</span>
+            <span class="text-sm bg-blue-100 text-blue-700 px-3 py-1 rounded-full">Vector Graphics</span>
+            <span class="text-sm bg-blue-100 text-blue-700 px-3 py-1 rounded-full">Web Development</span>
+            <span class="text-sm bg-blue-100 text-blue-700 px-3 py-1 rounded-full">Design</span>
+          </div>
+          
+          <div class="flex justify-between items-center">
+            <p class="text-sm text-gray-600">
+              Last updated: September 12, 2025
+            </p>
+            <div class="flex space-x-4">
+              <button class="text-gray-600 hover:text-blue-600">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"/>
+                </svg>
+              </button>
+              <button class="text-gray-600 hover:text-blue-600">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </footer>
+      </article>
+
+      <!-- Related Articles -->
+      <section class="mt-12">
+        <h2 class="text-2xl font-bold text-gray-800 mb-6">Related Articles</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <a href="/blog/image-optimization-web" class="bg-white rounded-lg shadow hover:shadow-lg transition-shadow p-4">
+            <h3 class="font-bold text-gray-800 mb-2">Image Optimization Guide</h3>
+            <p class="text-sm text-gray-600">Learn how to optimize images for better web performance.</p>
+          </a>
+          <a href="/blog/pdf-to-image.html" class="bg-white rounded-lg shadow hover:shadow-lg transition-shadow p-4">
+            <h3 class="font-bold text-gray-800 mb-2">PDF to Image Guide</h3>
+            <p class="text-sm text-gray-600">Convert PDF documents to various image formats.</p>
+          </a>
+          <a href="/blog/batch-image-conversion.html" class="bg-white rounded-lg shadow hover:shadow-lg transition-shadow p-4">
+            <h3 class="font-bold text-gray-800 mb-2">Batch Conversion Guide</h3>
+            <p class="text-sm text-gray-600">Convert multiple files efficiently.</p>
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-8 md:py-12 mt-16">
+    <div class="container mx-auto px-4 text-center">
+      <p>&copy; 2025 Snap2Format. Created by Gourav Choudhary. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
